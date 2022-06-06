@@ -8,7 +8,7 @@ namespace DominoClasses
 {
     public class Hand
     {
-        protected List<Domino> dominos = new List<Domino>();
+        public List<Domino> dominos = new List<Domino>();
 
         public Hand() { }
 

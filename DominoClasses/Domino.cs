@@ -2,10 +2,10 @@
 
 namespace DominoClasses
 {
-    public class Domino
+    public class Domino : IComparable<Domino>
     {
-        private int side1;
-        private int side2;
+        public int side1;
+        public int side2;
 
         public int Side1
         {

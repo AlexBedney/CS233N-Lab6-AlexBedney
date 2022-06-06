@@ -1,12 +1,13 @@
 ﻿using DominoClasses;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace DominoClasses
 {
-    public abstract class Train
+    public abstract class Train : IEnumerable<Train>
     {
         protected List<Domino> dominos;
         protected int engineValue;
@@ -129,6 +130,16 @@ namespace DominoClasses
                 output += d.ToString() + "\t";
             output += "\n";
             return output;
+        }
+
+        public IEnumerator<Train> GetEnumerator()
+        {
+            return ((IEnumerable<Train>)dominos).GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return ((IEnumerable<Train>)dominos).GetEnumerator();
         }
     }
 }
