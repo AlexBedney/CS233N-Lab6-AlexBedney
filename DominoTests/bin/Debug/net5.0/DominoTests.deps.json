@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "DominoTests/1.0.0": {
+        "dependencies": {
+          "DominoClasses": "1.0.0"
+        },
+        "runtime": {
+          "DominoTests.dll": {}
+        }
+      },
+      "DominoClasses/1.0.0": {
+        "runtime": {
+          "DominoClasses.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DominoTests/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DominoClasses/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
